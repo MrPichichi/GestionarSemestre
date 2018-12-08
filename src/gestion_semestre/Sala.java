@@ -5,13 +5,15 @@
  */
 package gestion_semestre;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author FrancsicoGP
  */
 public class Sala {
     String numero;
-
+    ArrayList <Curso> cursosEnLaSala;
     public String getNumero() {
         return numero;
     }
@@ -19,5 +21,7 @@ public class Sala {
     public void setNumero(String numero) {
         this.numero = numero;
     }
-    
+    public void addCurso(Curso curso){
+        this.cursosEnLaSala.add(curso);
+    }
 }
